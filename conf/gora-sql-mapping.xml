@@ -18,7 +18,7 @@
 <gora-orm>
 
 <class name="org.apache.nutch.storage.WebPage" keyClass="java.lang.String" table="webpage">
-  <primarykey column="id" length="512"/>
+  <primarykey column="id" length="767"/>
     <field name="baseUrl" column="baseUrl" length="512"/>    
     <field name="status" column="status"/>
     <field name="prevFetchTime" column="prevFetchTime"/>
@@ -51,7 +51,7 @@
 
 <class name="org.apache.nutch.storage.Host" keyClass="java.lang.String"
 table="host">
-  <primarykey column="id" length="512"/>
+  <primarykey column="id" length="767"/>
   <field name="metadata" column="metadata"/>
   <field name="inlinks" column="inlinks"/>
   <field name="outlinks" column="outlinks"/>
