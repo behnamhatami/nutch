@@ -159,6 +159,7 @@
       <packageset dir="${plugins.dir}/lib-regex-filter/src/java"/>
       <packageset dir="${plugins.dir}/microformats-reltag/src/java"/>
       <packageset dir="${plugins.dir}/parse-ext/src/java"/>
+      <packageset dir="${plugins.dir}/parse-employ/src/java"/>
       <packageset dir="${plugins.dir}/parse-html/src/java"/>
       <packageset dir="${plugins.dir}/parse-js/src/java"/>
       <packageset dir="${plugins.dir}/parse-swf/src/java"/>
@@ -949,6 +950,7 @@
         <source path="${basedir}/src/plugin/urlnormalizer-basic/src/java/" />
         <source path="${basedir}/src/plugin/language-identifier/src/java/" />
         <source path="${basedir}/src/plugin/scoring-opic/src/java/" />
+      	<source path="${basedir}/src/plugin/parse-employ/src/java/" />
         <source path="${basedir}/src/plugin/parse-html/src/java/" />
         <source path="${basedir}/src/plugin/microformats-reltag/src/java/" />
         <source path="${basedir}/src/plugin/protocol-file/src/java/" />

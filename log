@@ -1,0 +1,1529 @@
+Buildfile: /home/behnam/workspace/nutch/build.xml
+Trying to override old definition of task javac
+  [taskdef] Could not load definitions from resource org/sonar/ant/antlib.xml. It could not be found.
+
+ivy-probe-antlib:
+
+ivy-download:
+  [taskdef] Could not load definitions from resource org/sonar/ant/antlib.xml. It could not be found.
+
+ivy-download-unchecked:
+
+ivy-init-antlib:
+
+ivy-init:
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/release
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/test/classes
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: Ivy 2.2.0 - 20100923230623 :: http://ant.apache.org/ivy/ ::
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+  [taskdef] Could not load definitions from resource org/sonar/ant/antlib.xml. It could not be found.
+
+copy-libs:
+
+compile-core:
+    [javac] Compiling 180 source files to /home/behnam/workspace/nutch/build/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/classes
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/classes
+      [jar] Building jar: /home/behnam/workspace/nutch/build/apache-nutch-2.2.jar
+
+compile-plugins:
+
+deploy:
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/creativecommons
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/creativecommons/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/creativecommons/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/creativecommons
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: creativecommons
+    [javac] Compiling 2 source files to /home/behnam/workspace/nutch/build/creativecommons/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/creativecommons/creativecommons.jar
+
+deps-test:
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/nutch-extensionpoints
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/nutch-extensionpoints/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/nutch-extensionpoints/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/nutch-extensionpoints
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+      [jar] Building MANIFEST-only jar: /home/behnam/workspace/nutch/build/nutch-extensionpoints/nutch-extensionpoints.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/nutch-extensionpoints
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/nutch-extensionpoints
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/creativecommons
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/creativecommons
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/index-anchor
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/index-anchor/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/index-anchor/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/index-anchor
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: index-anchor
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/index-anchor/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/index-anchor/index-anchor.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/index-anchor
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/index-anchor
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/index-basic
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/index-basic/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/index-basic/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/index-basic
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: index-basic
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/index-basic/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/index-basic/index-basic.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/index-basic
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/index-basic
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/index-more
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/index-more/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/index-more/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/index-more
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: index-more
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/index-more/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/index-more/index-more.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/index-more
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/index-more
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/language-identifier
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/language-identifier/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/language-identifier/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/language-identifier
+
+init-plugin:
+     [echo] Copying language profiles
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/language-identifier/classes
+     [echo] Copying test files
+     [copy] Copying 12 files to /home/behnam/workspace/nutch/build/language-identifier/test
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: language-identifier
+    [javac] Compiling 2 source files to /home/behnam/workspace/nutch/build/language-identifier/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/language-identifier/language-identifier.jar
+
+deps-test:
+
+init:
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/language-identifier
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/language-identifier
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/lib-http
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/lib-http/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/lib-http/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/lib-http
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: lib-http
+    [javac] Compiling 4 source files to /home/behnam/workspace/nutch/build/lib-http/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/lib-http/lib-http.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/lib-http
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/lib-http
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/lib-nekohtml
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/lib-nekohtml/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/lib-nekohtml/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/lib-nekohtml
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/lib-nekohtml
+
+copy-generated-lib:
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/lib-regex-filter
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/lib-regex-filter/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/lib-regex-filter/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/lib-regex-filter
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: lib-regex-filter
+    [javac] Compiling 2 source files to /home/behnam/workspace/nutch/build/lib-regex-filter/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/lib-regex-filter/lib-regex-filter.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/lib-regex-filter
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/lib-regex-filter
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/lib-xml
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/lib-xml/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/lib-xml/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/lib-xml
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+      [jar] Building MANIFEST-only jar: /home/behnam/workspace/nutch/build/lib-xml/lib-xml.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/lib-xml
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/lib-xml
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/microformats-reltag/test/data
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/microformats-reltag/test/data
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/microformats-reltag/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/microformats-reltag
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: microformats-reltag
+    [javac] Compiling 2 source files to /home/behnam/workspace/nutch/build/microformats-reltag/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/microformats-reltag/microformats-reltag.jar
+
+deps-test:
+
+init:
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/protocol-file/test/data
+     [copy] Copying 2 files to /home/behnam/workspace/nutch/build/protocol-file/test/data
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/protocol-file/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/protocol-file
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: protocol-file
+    [javac] Compiling 4 source files to /home/behnam/workspace/nutch/build/protocol-file/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/protocol-file/protocol-file.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/protocol-file
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/protocol-file
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/microformats-reltag
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/microformats-reltag
+
+init:
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/protocol-ftp
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/protocol-ftp/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/protocol-ftp/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/protocol-ftp
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: protocol-ftp
+    [javac] Compiling 11 source files to /home/behnam/workspace/nutch/build/protocol-ftp/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/protocol-ftp/protocol-ftp.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/protocol-ftp
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/protocol-ftp
+
+init:
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: protocol-file
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/protocol-http
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/protocol-http/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/protocol-http/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/protocol-http
+
+init-plugin:
+
+deps-jar:
+
+init:
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: lib-http
+
+jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: protocol-http
+    [javac] Compiling 2 source files to /home/behnam/workspace/nutch/build/protocol-http/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/protocol-http/protocol-http.jar
+
+deps-test:
+
+init:
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: lib-http
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+init:
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/protocol-http
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/protocol-http
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/protocol-httpclient/test/data
+     [copy] Copying 5 files to /home/behnam/workspace/nutch/build/protocol-httpclient/test/data
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/protocol-httpclient/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/protocol-httpclient
+
+init-plugin:
+
+deps-jar:
+
+init:
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: lib-http
+
+jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: protocol-httpclient
+    [javac] Compiling 8 source files to /home/behnam/workspace/nutch/build/protocol-httpclient/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/protocol-httpclient/protocol-httpclient.jar
+
+deps-test:
+     [copy] Copying 2 files to /home/behnam/workspace/nutch/build/protocol-httpclient/test
+     [copy] Copied 6 empty directories to 5 empty directories under /home/behnam/workspace/nutch/build/protocol-httpclient/test
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/protocol-httpclient
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/protocol-httpclient
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/protocol-sftp
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/protocol-sftp/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/protocol-sftp/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/protocol-sftp
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: protocol-sftp
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/protocol-sftp/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/protocol-sftp/protocol-sftp.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/protocol-sftp
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/protocol-sftp
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/parse-js/test/data
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/parse-js/test/data
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/parse-js/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/parse-js
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: parse-js
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/parse-js/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/parse-js/parse-js.jar
+
+deps-test:
+
+init:
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+init:
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: protocol-file
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/parse-js
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/parse-js
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/parse-html
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/parse-html/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/parse-html/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/parse-html
+
+init-plugin:
+
+deps-jar:
+
+init:
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: parse-html
+    [javac] Compiling 5 source files to /home/behnam/workspace/nutch/build/parse-html/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/parse-html/parse-html.jar
+
+deps-test:
+
+init:
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+init:
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/parse-html
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/parse-html
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/parse-tika/test/data
+     [copy] Copying 8 files to /home/behnam/workspace/nutch/build/parse-tika/test/data
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/parse-tika/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/parse-tika
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: parse-tika
+    [javac] Compiling 6 source files to /home/behnam/workspace/nutch/build/parse-tika/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/parse-tika/parse-tika.jar
+
+deps-test:
+
+init:
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+init:
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: protocol-file
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/parse-tika
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/parse-tika
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/scoring-link
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/scoring-link/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/scoring-link/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/scoring-link
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: scoring-link
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/scoring-link/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/scoring-link/scoring-link.jar
+
+deps-test:
+
+init:
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/scoring-link
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/scoring-link
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/scoring-opic
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/scoring-opic/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/scoring-opic/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/scoring-opic
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: scoring-opic
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/scoring-opic/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/scoring-opic/scoring-opic.jar
+
+deps-test:
+
+init:
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/scoring-opic
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/scoring-opic
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/subcollection
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/subcollection/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/subcollection/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/subcollection
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: subcollection
+    [javac] Compiling 3 source files to /home/behnam/workspace/nutch/build/subcollection/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/subcollection/subcollection.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/subcollection
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/subcollection
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/tld
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/tld/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/tld/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/tld
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: tld
+    [javac] Compiling 2 source files to /home/behnam/workspace/nutch/build/tld/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/tld/tld.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/tld
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/tld
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-automaton/test/data
+     [copy] Copying 6 files to /home/behnam/workspace/nutch/build/urlfilter-automaton/test/data
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-automaton/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/urlfilter-automaton
+
+init-plugin:
+
+deps-jar:
+
+init:
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: lib-regex-filter
+
+jar:
+
+init:
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: lib-regex-filter
+
+compile-test:
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/lib-regex-filter/test
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: urlfilter-automaton
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/urlfilter-automaton/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/urlfilter-automaton/urlfilter-automaton.jar
+
+deps-test:
+
+init:
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: lib-regex-filter
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlfilter-automaton
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlfilter-automaton
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-domain/test/data
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/urlfilter-domain/test/data
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-domain/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/urlfilter-domain
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: urlfilter-domain
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/urlfilter-domain/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/urlfilter-domain/urlfilter-domain.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlfilter-domain
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlfilter-domain
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-prefix
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-prefix/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-prefix/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/urlfilter-prefix
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: urlfilter-prefix
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/urlfilter-prefix/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/urlfilter-prefix/urlfilter-prefix.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlfilter-prefix
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlfilter-prefix
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-regex/test/data
+     [copy] Copying 6 files to /home/behnam/workspace/nutch/build/urlfilter-regex/test/data
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-regex/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/urlfilter-regex
+
+init-plugin:
+
+deps-jar:
+
+init:
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: lib-regex-filter
+
+jar:
+
+init:
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: lib-regex-filter
+
+compile-test:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: urlfilter-regex
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/urlfilter-regex/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/urlfilter-regex/urlfilter-regex.jar
+
+deps-test:
+
+init:
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: lib-regex-filter
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlfilter-regex
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlfilter-regex
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-suffix
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-suffix/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-suffix/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/urlfilter-suffix
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: urlfilter-suffix
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/urlfilter-suffix/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/urlfilter-suffix/urlfilter-suffix.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlfilter-suffix
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlfilter-suffix
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-validator
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-validator/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlfilter-validator/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/urlfilter-validator
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: urlfilter-validator
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/urlfilter-validator/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/urlfilter-validator/urlfilter-validator.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlfilter-validator
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlfilter-validator
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlnormalizer-basic
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlnormalizer-basic/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlnormalizer-basic/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/urlnormalizer-basic
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: urlnormalizer-basic
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/urlnormalizer-basic/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/urlnormalizer-basic/urlnormalizer-basic.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlnormalizer-basic
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlnormalizer-basic
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlnormalizer-pass
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlnormalizer-pass/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlnormalizer-pass/test
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/urlnormalizer-pass
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: urlnormalizer-pass
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/urlnormalizer-pass/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/urlnormalizer-pass/urlnormalizer-pass.jar
+
+deps-test:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlnormalizer-pass
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlnormalizer-pass
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlnormalizer-regex/test/data
+     [copy] Copying 4 files to /home/behnam/workspace/nutch/build/urlnormalizer-regex/test/data
+
+init:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/urlnormalizer-regex/classes
+    [mkdir] Created dir: /home/behnam/workspace/nutch/build/plugins/urlnormalizer-regex
+
+init-plugin:
+
+deps-jar:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+     [echo] Compiling plugin: urlnormalizer-regex
+    [javac] Compiling 1 source file to /home/behnam/workspace/nutch/build/urlnormalizer-regex/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+jar:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/urlnormalizer-regex/urlnormalizer-regex.jar
+
+deps-test:
+
+init:
+
+init-plugin:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: loading settings :: file = /home/behnam/workspace/nutch/ivy/ivysettings.xml
+
+compile:
+
+jar:
+
+deps-test:
+
+deploy:
+
+copy-generated-lib:
+
+deploy:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlnormalizer-regex
+
+copy-generated-lib:
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/build/plugins/urlnormalizer-regex
+
+compile:
+
+job:
+      [jar] Building jar: /home/behnam/workspace/nutch/build/apache-nutch-2.2.job
+
+runtime:
+    [mkdir] Created dir: /home/behnam/workspace/nutch/runtime
+    [mkdir] Created dir: /home/behnam/workspace/nutch/runtime/local
+    [mkdir] Created dir: /home/behnam/workspace/nutch/runtime/deploy
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/runtime/deploy
+     [copy] Copying 2 files to /home/behnam/workspace/nutch/runtime/deploy/bin
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/runtime/local/lib
+     [copy] Copying 1 file to /home/behnam/workspace/nutch/runtime/local/lib/native
+     [copy] Copying 26 files to /home/behnam/workspace/nutch/runtime/local/conf
+     [copy] Copying 2 files to /home/behnam/workspace/nutch/runtime/local/bin
+     [copy] Copying 95 files to /home/behnam/workspace/nutch/runtime/local/lib
+     [copy] Copying 103 files to /home/behnam/workspace/nutch/runtime/local/plugins
+     [copy] Copied 2 empty directories to 2 empty directories under /home/behnam/workspace/nutch/runtime/local/test
+
+BUILD SUCCESSFUL
+Total time: 30 seconds

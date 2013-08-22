@@ -43,6 +43,7 @@
      <ant dir="protocol-httpclient" target="deploy"/>
      <ant dir="protocol-sftp" target="deploy"/>
      <ant dir="parse-js" target="deploy"/>
+     <ant dir="parse-employ" target="deploy"/>
      <ant dir="parse-html" target="deploy"/>
      <ant dir="parse-tika" target="deploy"/>
      <ant dir="scoring-link" target="deploy"/>
@@ -116,6 +117,7 @@
     <ant dir="nutch-extensionpoints" target="clean"/>
     <ant dir="parse-ext" target="clean"/>
     <ant dir="parse-js" target="clean"/>
+    <ant dir="parse-employ" target="clean"/>
     <ant dir="parse-html" target="clean"/>
     <ant dir="parse-swf" target="clean"/>
     <ant dir="parse-tika" target="clean"/>
