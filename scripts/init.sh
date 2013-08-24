@@ -1,3 +1,3 @@
 mkdir -p urls
-echo 'http://nutch.apache.org/' > urls/seed.txt
- bin/nutch inject urls
+echo 'http://narenji.ir/' > urls/seed.txt
+bin/nutch inject urls

@@ -159,7 +159,6 @@
       <packageset dir="${plugins.dir}/lib-regex-filter/src/java"/>
       <packageset dir="${plugins.dir}/microformats-reltag/src/java"/>
       <packageset dir="${plugins.dir}/parse-ext/src/java"/>
-      <packageset dir="${plugins.dir}/parse-employ/src/java"/>
       <packageset dir="${plugins.dir}/parse-html/src/java"/>
       <packageset dir="${plugins.dir}/parse-js/src/java"/>
       <packageset dir="${plugins.dir}/parse-swf/src/java"/>
@@ -902,7 +901,6 @@
     <eclipse updatealways="true">
       <project name="${eclipse.project}" />
       <classpath>
-        
         <library path="${conf.dir}" exported="false" />
         <library path="${basedir}/src/bin" exported="false" />
         <library pathref="eclipse.classpath" exported="false" />
@@ -921,7 +919,7 @@
                  
         <library path="${basedir}/build/plugins/parse-html/tagsoup-1.2.jar" 
                  exported="false" />
-
+      	
         <source path="${basedir}/src/java/" />
         <source path="${basedir}/src/test/" />
         <source path="${basedir}/src/plugin/protocol-ftp/src/java/" />

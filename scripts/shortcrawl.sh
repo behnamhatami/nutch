@@ -6,9 +6,9 @@
 export NUTCH_HOME=`pwd`
 
 # number of passes to make
-n=2
+n=1
 # number of selected urls for fetching
-maxUrls=50
+maxUrls=10
 # solr server
 solrUrl=http://localhost:8983/solr/
 
@@ -43,9 +43,9 @@ echo "Updating."
 # Update
 $NUTCH_HOME/bin/nutch updatedb -D db.update.additions.allowed=true >> $log
 
-echo " "
+echo "Indexing"
 # Index
-#$NUTCH_HOME/bin/nutch solrindex $solrUrl $batchId >> $log
+# $NUTCH_HOME/bin/nutch solrindex $solrUrl $batchId >> $log
 
 done
 

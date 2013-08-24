@@ -21,11 +21,17 @@
    version="1.0.0"
    provider-name="Behnam Hatami">
    <runtime>
-      <library name="employ-parse-html.jar">
+      <library name="parse-employ.jar">
          <export name="*"/>
       </library>
+      <library name="jsoup-1.7.2.jar"/>
    </runtime>
-
+   
+   <requires>
+      <import plugin="nutch-extensionpoints"/>
+      <import plugin="parse-html" />
+   </requires>
+   
    <extension id="org.employ.nutch.parse.html"
               name="CustomHtmlParse"
               point="org.apache.nutch.parse.Parser">
@@ -36,4 +42,11 @@
         <parameter name="pathSuffix" value=""/>
       </implementation>
    </extension>
+   
+     <extension id="org.employ.nutch.indexer.usertags"
+      name="User Tag Indexing Filter"
+      point="org.apache.nutch.indexer.IndexingFilter">
+    <implementation id="org.employ.nutch.indexer.usertags.UserTagIndexingFilter"
+        class="org.employ.nutch.indexer.usertags.UserTagIndexingFilter"/>
+  </extension>
 </plugin>
