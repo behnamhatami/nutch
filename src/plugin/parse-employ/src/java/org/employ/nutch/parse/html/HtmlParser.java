@@ -44,7 +44,6 @@ public class HtmlParser implements Parser {
 		IParser parser = ParserFactory.getParser(url);
 		if (parser != null) {
 			try {
-				LOG.info("Parsing");
 				Map<EmployField, String> parsedFields = parser.parse(
 						Bytes.toString(Bytes.toBytes(page.getContent())), url);
 
