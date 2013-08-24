@@ -139,7 +139,6 @@ public class HtmlParser implements Parser {
   private String cachingPolicy;
 
   public Parse getParse(String url, WebPage page) {
-	LOG.info("Parsing URL:[" + url + "]");
     HTMLMetaTags metaTags = new HTMLMetaTags();
 
     String baseUrl = TableUtil.toString(page.getBaseUrl());

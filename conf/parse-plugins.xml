@@ -21,12 +21,12 @@
 	</mimeType>
 
 	<mimeType name="text/html">
-		<!-- <plugin id="parse-employ" /> -->
+		<plugin id="parse-employ" />
 		<plugin id="parse-html" />
 	</mimeType>
 
 	<mimeType name="application/xhtml+xml">
-		<!-- <plugin id="parse-employ" /> -->
+		<plugin id="parse-employ" />
 		<plugin id="parse-html" />
 	</mimeType>
 

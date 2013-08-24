@@ -27,7 +27,7 @@ public class UserTagIndexingFilter implements IndexingFilter {
 
 	static {
 		FIELDS.add(WebPage.Field.METADATA);
-	}	
+	}
 
 	private Configuration conf;
 
@@ -38,10 +38,10 @@ public class UserTagIndexingFilter implements IndexingFilter {
 		Map<Utf8, ByteBuffer> metadata = page.getMetadata();
 		for (Utf8 key : metadata.keySet()) {
 			String keyStr = TableUtil.toString(key);
-			
+
 			if (StringUtils.isEmpty(keyStr))
 				continue;
-			
+
 			if (keyStr.startsWith("e_")) {
 				String value = Bytes.toString(Bytes.toBytes(metadata.get(key)));
 				doc.add(keyStr, value);

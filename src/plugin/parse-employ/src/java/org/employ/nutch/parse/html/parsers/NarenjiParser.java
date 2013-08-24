@@ -27,11 +27,10 @@ public class NarenjiParser implements IParser {
 			parsedFields.put(EmployField.e_title, post.select("h1.title a")
 					.first().text());
 
-			parsedFields.put(EmployField.e_content, post
+			parsedFields.put(EmployField.e_date, post
 					.select("div.submitted").first().text());
 
-			parsedFields.put(EmployField.e_date, post.select("p.content")
-					.first().text());
+			parsedFields.put(EmployField.e_content, post.select("div.content").first().text());
 		}
 		return parsedFields;
 	}
