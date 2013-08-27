@@ -29,6 +29,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 import org.apache.nutch.crawl.SignatureFactory;
+import org.apache.nutch.fetcher.FetcherJob;
 import org.apache.nutch.protocol.Content;
 import org.apache.nutch.protocol.Protocol;
 import org.apache.nutch.protocol.ProtocolFactory;
@@ -117,6 +118,7 @@ public class ParserChecker implements Tool {
           + ": " + ProtocolStatusUtils.getMessage(protocolOutput.getStatus()));
       return (-1);
     }
+    
     Content content = protocolOutput.getContent();
     
     if (content == null) {

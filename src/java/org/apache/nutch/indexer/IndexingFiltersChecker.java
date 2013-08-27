@@ -83,15 +83,15 @@ public class IndexingFiltersChecker extends Configured implements Tool {
     page.setBaseUrl(new org.apache.avro.util.Utf8(url));
     ProtocolOutput protocolOutput = protocol.getProtocolOutput(url, page);
     page.setProtocolStatus(protocolOutput.getStatus());
-    if (protocolOutput.getStatus().getCode() == ProtocolStatusCodes.SUCCESS) {
+//    if (protocolOutput.getStatus().getCode() == ProtocolStatusCodes.SUCCESS) {
       page.setStatus(CrawlStatus.STATUS_FETCHED);
       page.setFetchTime(System.currentTimeMillis());
-    } else {
-      LOG.error("Fetch failed with protocol status: "
-          + ProtocolStatusUtils.getName(protocolOutput.getStatus().getCode())
-          + ": " + ProtocolStatusUtils.getMessage(protocolOutput.getStatus()));
-      return -1;
-    }
+//    } else {
+//      LOG.error("Fetch failed with protocol status: "
+//          + ProtocolStatusUtils.getName(protocolOutput.getStatus().getCode())
+//          + ": " + ProtocolStatusUtils.getMessage(protocolOutput.getStatus()));
+//      return -1;
+//    }
     
     Content content = protocolOutput.getContent();
     if (content == null) {

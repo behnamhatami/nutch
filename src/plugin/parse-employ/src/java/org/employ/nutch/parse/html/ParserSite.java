@@ -4,8 +4,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public enum ParserSite {
-	Estekhdam("www.estekhtam.com"), Narenji("narenji.ir");
-	
+	Estekhdam("www.estekhtam.com"), Narenji("narenji.ir"), EEstekhdam(
+			"www.e-estekhdam.com");
+
 	private String host;
 
 	private ParserSite(String host) {

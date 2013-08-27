@@ -6,9 +6,9 @@
 export NUTCH_HOME=`pwd`
 
 # number of passes to make
-n=1
+n=1000
 # number of selected urls for fetching
-maxUrls=10
+maxUrls=100
 # solr server
 solrUrl=http://localhost:8983/solr/
 
@@ -22,7 +22,7 @@ for (( i = 1 ; i <= $n ; i++ ))
 do
 
 batchId=`date +%s`-$RANDOM
-echo "Generating batchId: "$batchId
+echo $i": Generating batchId: "$batchId
 log=$NUTCH_HOME/logs/log$batchId     
 
 echo "log: "$log
@@ -43,9 +43,9 @@ echo "Updating."
 # Update
 $NUTCH_HOME/bin/nutch updatedb -D db.update.additions.allowed=true >> $log
 
-echo "Indexing"
+sleep 5;
+# echo "Indexing"
 # Index
 # $NUTCH_HOME/bin/nutch solrindex $solrUrl $batchId >> $log
-
 done
 

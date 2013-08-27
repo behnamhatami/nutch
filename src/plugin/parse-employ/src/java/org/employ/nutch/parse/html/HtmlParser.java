@@ -11,10 +11,12 @@ import java.util.Map;
 
 import org.apache.avro.util.Utf8;
 import org.apache.hadoop.conf.Configuration;
+import org.apache.nutch.indexer.IndexingFiltersChecker;
 import org.apache.nutch.parse.Outlink;
 import org.apache.nutch.parse.Parse;
 import org.apache.nutch.parse.ParseStatusCodes;
 import org.apache.nutch.parse.Parser;
+import org.apache.nutch.parse.ParserChecker;
 import org.apache.nutch.storage.ParseStatus;
 import org.apache.nutch.storage.WebPage;
 import org.apache.nutch.util.Bytes;
@@ -39,7 +41,7 @@ public class HtmlParser implements Parser {
 		parse.setParseStatus(new ParseStatus());
 		parse.setOutlinks(new Outlink[0]);
 
-		LOG.info("Employ Parsing URL:[" + url + "]");
+		LOG.info("Employ Parsing");
 
 		IParser parser = ParserFactory.getParser(url);
 		if (parser != null) {
