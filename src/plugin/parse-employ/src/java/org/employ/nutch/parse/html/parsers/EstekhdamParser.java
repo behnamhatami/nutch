@@ -21,17 +21,21 @@ public class EstekhdamParser implements IParser {
 		parsedFields.put(EmployField.title, doc.select("title").first().text());
 
 		parsedFields.put(EmployField.content, doc.text());
-		
+
 		Element post = doc.select("div.post-inner").first();
 		if (post != null) {
-			parsedFields.put(EmployField.e_title, post
-					.select("h1.post-title a").first().text());
+			if (!post.select("h1.post-title a").isEmpty())
+				parsedFields.put(EmployField.e_title,
+						post.select("h1.post-title a").first().text());
 
-			parsedFields.put(EmployField.e_content, post.select("div.entry")
-					.first().text());
+			if (!post.select("div.entry").isEmpty())
+				parsedFields.put(EmployField.e_content, post
+						.select("div.entry").first().text());
 
-			parsedFields.put(EmployField.e_date,
-					post.select("p.post-meta span.date span").first().text());
+			if (!post.select("p.post-meta span.date span").isEmpty())
+				parsedFields.put(EmployField.e_date,
+						post.select("p.post-meta span.date span").first()
+								.text());
 		}
 		return parsedFields;
 	}

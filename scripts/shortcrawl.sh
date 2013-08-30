@@ -8,7 +8,7 @@ export NUTCH_HOME=`pwd`
 # number of passes to make
 n=1000
 # number of selected urls for fetching
-maxUrls=100
+maxUrls=500
 # solr server
 solrUrl=http://localhost:8983/solr/
 
@@ -16,7 +16,7 @@ echo "starting mycrawl" >> $NUTCH_HOME/logs/hadoop.log
 
 # Inject
 cd $NUTCH_HOME
-$NUTCH_HOME/bin/nutch inject -D db.update.additions.allowed=true urls
+# $NUTCH_HOME/bin/nutch inject -D db.update.additions.allowed=true urls
 
 for (( i = 1 ; i <= $n ; i++ ))
 do
@@ -43,6 +43,7 @@ echo "Updating."
 # Update
 $NUTCH_HOME/bin/nutch updatedb -D db.update.additions.allowed=true >> $log
 
+echo "Finish phase"
 sleep 5;
 # echo "Indexing"
 # Index
